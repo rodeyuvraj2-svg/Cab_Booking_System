@@ -1,0 +1,13 @@
+[
+    {
+        "id": 1001,
+        "pickup": "Jail road Nashik Maharashtra",
+        "drop": "Indra Nagar Nashik Maharashtra",
+        "customers_id": 1,
+        "status": "Completed",
+        "v_type": "Sedan",
+        "fair": 153,
+        "distance": 9,
+        "driver": "Chacham"
+    }
+]

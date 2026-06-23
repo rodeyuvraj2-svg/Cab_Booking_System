@@ -1,95 +1,107 @@
-# Expense Splitter
+# Cab Booking System
 
-A simple command-line Expense Splitter application built with Python. It helps users manage shared expenses, track balances, and settle debts between group members.
+A command-line Cab Booking System built with Python. The project supports customer, driver, and admin roles with ride booking, driver management, fare calculation, and JSON-based data storage.
 
 ## Features
 
-* Add members
-* Add expenses
-* Split expenses equally among selected members
-* View balances
-* Track who owes whom
-* Settle debts
-* Store data using JSON files
-* View expense history
+### Admin
+
+* Register and login
+* View all customers
+* View all drivers
+* View all rides
+* Add drivers
+* Remove drivers
+
+### Customer
+
+* Register and login
+* Book rides
+* View current rides
+* View ride history
+* Manage favorite locations
+* Edit profile
+* Change password
+* Delete account
+
+### Driver
+
+* Register and login
+* Go online/offline
+* View pending rides
+* Accept rides
+* Complete rides
+* Edit profile
+* Change password
+* Delete account
+
+## Ride System
+
+* Multiple vehicle types:
+
+  * Mini Sedan
+  * Sedan
+  * SUV
+  * Auto
+* Driver matching based on vehicle type and availability
+* Real distance calculation using OpenRouteService
+* Automatic fare calculation
+
+## Data Storage
+
+All data is stored in JSON files:
+
+* `m_admin.json`
+* `customer.json`
+* `driver.json`
+* `m_ride.json`
+* `location.json`
+
+## Tech Stack
+
+* Python
+* JSON
+* OpenRouteService API
 
 ## Project Structure
 
 ```text
-Expense_Splitter/
-│
+cab_booking_system/
 ├── cli/
-│   ├── balance.py
-│   ├── expense.py
-│   ├── member.py
-│   └── settlement.py
-│
+│   ├── admin_cli.py
+│   ├── customer_cli.py
+│   └── driver_cli.py
 ├── models/
-│   └── expense.py
-│
+│   ├── admin.py
+│   ├── customer.py
+│   ├── driver.py
+│   ├── ride.py
+│   └── location.py
 ├── services/
-│   ├── balance.py
-│   ├── expense.py
-│   ├── member.py
-│   └── settlement.py
-│
+│   ├── admin_service.py
+│   ├── customer_service.py
+│   ├── driver_service.py
+│   ├── ride_service.py
+│   ├── location_service.py
+│   ├── distance_service.py
+│   └── base_service.py
 ├── storage/
-│   ├── members.json
-│   └── expense.json
-│
-├── main.py
-└── README.md
-```
-## Usage
-
-### Main Menu
-
-```text
-1. Add Member
-2. Add Expense
-3. Balance
-4. Settlement
-5. Exit
+│   ├── m_admin.json
+│   ├── customer.json
+│   ├── driver.json
+│   ├── m_ride.json
+│   └── location.json
+└── main.py
 ```
 
-### Add Expense
+## Run
 
-* Enter expense name
-* Enter total amount
-* Select payer
-* Select members involved
-* Expense is automatically split equally
-
-### Show Balance
-
-Displays:
-
-```text
-payer should receive 3500
-
-member 1 owes 1750
-member 2 owes 1750
+```bash
+python main.py
 ```
 
-### Settlement
+## Note
 
-Allows members to pay their pending debt and updates balances automatically.
+This project was built as a learning project to practice Python OOP, file handling, APIs, and CLI application development.
 
-## Technologies Used
-
-* Python
-* Object-Oriented Programming (OOP)
-* JSON File Handling
-
-## Concepts Implemented
-
-* Classes and Objects
-* Inheritance
-* File Handling
-* JSON Storage
-* Data Persistence
-* Modular Programming
-
-## Author
-
-Yuvraj Rode
+Admin key = 2580 for registration

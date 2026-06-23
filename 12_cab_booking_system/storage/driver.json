@@ -1,0 +1,46 @@
+[
+    {
+        "id": 1,
+        "name": "Pande",
+        "mobile": 2631457856,
+        "email": "pande",
+        "password": "Pande69",
+        "l_num": "LICENSE 1",
+        "v_type": "Mini Sedan",
+        "v_num": "MH_GY4856",
+        "mode": "online"
+    },
+    {
+        "id": 2,
+        "name": "Chacham",
+        "mobile": 5648785648,
+        "email": "saksham",
+        "password": "chacham89",
+        "l_num": "LICENSE 2",
+        "v_type": "Sedan",
+        "v_num": "MH15_KO2645",
+        "mode": "online"
+    },
+    {
+        "id": 3,
+        "name": "Om",
+        "mobile": 9999999999,
+        "email": "om",
+        "password": "OM69",
+        "l_num": "LICENSE 3",
+        "v_type": "SUV",
+        "v_num": "MH_KO7845",
+        "mode": "offline"
+    },
+    {
+        "id": 4,
+        "name": "Patil",
+        "mobile": 45895612,
+        "email": "chaitanya",
+        "password": "chai69",
+        "l_num": "LICENSE 4",
+        "v_type": "Auto",
+        "v_num": "MH_15JB9999",
+        "mode": "offline"
+    }
+]
